@@ -19,8 +19,6 @@ def save_plot(file_name, plot):
 def main():
     '''Main function for descriptive statistics and visualization'''
 
-    warnings.filterwarnings('ignore', category=FutureWarning)
-
     # Import dataset
     iris_data = lib.import_iris("iris_data.csv")
 
@@ -30,7 +28,7 @@ def main():
 
     # Generate and save visualization
     fig = lib.visualize_iris(iris_data)
-    lib.save_plot("SepalLengthbySpecies_boxplot.png", fig)
+    save_plot("SepalLengthbySpecies_boxplot.png", fig)
 
 if __name__ == "__main__":
     main()
