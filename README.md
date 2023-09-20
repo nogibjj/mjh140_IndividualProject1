@@ -1,4 +1,6 @@
-# Descriptive Statistics with Pandas and Matplotlib   [![Workflows_by_Job](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/workflow.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/workflow.yml)
+# Descriptive Statistics with Pandas and Matplotlib   
+
+[![Format](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml)
 
 
 
