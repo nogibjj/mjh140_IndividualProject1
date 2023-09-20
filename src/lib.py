@@ -28,6 +28,7 @@ def describe_iris(iris_df):
     if not isinstance(iris_df, pd.DataFrame):
         raise TypeError("Iris data must be in pandas dataframe form")
     iris_stats = iris_df.describe().round(2)
+    print(type(iris_stats))
     return iris_stats
 
 def visualize_iris(iris_df):
@@ -52,5 +53,5 @@ def visualize_iris(iris_df):
 
 def save_plot(file_name, plot):
     plot.savefig(
-        "plots/" + f"{file_name}.png"
+        "plots/" + f"{file_name}"
     )
