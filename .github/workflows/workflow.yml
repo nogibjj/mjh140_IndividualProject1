@@ -13,13 +13,13 @@ jobs:
       - name: Create and Cache Virtual Environment
         uses: actions/cache@v2
         with:
-          path: myenv
+          path: venv
           key: venv-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
           restore-keys: venv-${{ runner.os }}-
 
       - name: Create Virtual Environment
         run: |
-          python3 -m venv myenv
+          python3 -m venv venv
           source myenv/bin/activate
   install:
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: Install Dependencies
         run: |
-          source myenv/bin/activate
+          source venv/bin/activate
           make install
   format:
     runs-on: ubuntu-latest
@@ -36,6 +36,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Format
         run: |
+          source venv/bin/activate
           make format
   pylint:
     runs-on: ubuntu-latest
@@ -44,6 +45,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Pylint
         run: |
+          source venv/bin/activate
           make pylint
   unitTests:
     runs-on: ubuntu-latest
@@ -52,4 +54,5 @@ jobs:
       - uses: actions/checkout@v3
       - name: Unit Tests
         run: |
+          source venv/bin/activate
           make test
