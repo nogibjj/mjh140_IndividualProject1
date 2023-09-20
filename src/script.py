@@ -1,12 +1,13 @@
 '''Returns descriptive statistics and visualization for the Iris dataset.'''
 
+import os
 import seaborn as sns
-import lib
+import src.lib as lib
 
 def save_plot(file_name, plot):
     '''Saves plot to /plots directory'''
 
-    if (file_name[-3:] != "png") | (file_name[-3:] != "jpg"):
+    if not (file_name[-3:] == "png") | (file_name[-3:] == "jpg"):
         file_name += ".png"
 
     if not isinstance(plot, sns.FacetGrid):
@@ -31,4 +32,6 @@ def main():
     save_plot("SepalLengthbySpecies_boxplot.png", fig)
 
 if __name__ == "__main__":
-    main()
+    #main()
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    print(current_dir)
