@@ -30,7 +30,7 @@ lint: format
 
 #Perform unit tests under tests/ directory
 test: lint
-	$(PYTEST) --nbval notebook.ipynb
+	$(PYTEST) --nbval-lax *.ipynb
 	$(PYTEST) tests/
 
 #Clean __pycache__ and remove venv
