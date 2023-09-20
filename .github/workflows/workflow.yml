@@ -20,7 +20,7 @@ jobs:
       - name: Create Virtual Environment
         run: |
           python3 -m venv venv
-          source myenv/bin/activate
+          source venv/bin/activate
   install:
     runs-on: ubuntu-latest
     needs: create-venv
