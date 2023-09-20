@@ -3,7 +3,7 @@ VENV := venv
 PYTHON := $(VENV)/bin/python3
 PIP := $(VENV)/bin/pip
 BLACK := $(VENV)/bin/black
-PYLINT := $(VENV)/bin/pylint
+RUFF := $(VENV)/bin/ruff
 PYTEST := $(VENV)/bin/pytest
 
 .PHONY: all venv install format test clean
@@ -24,9 +24,9 @@ format: install
 	$(BLACK) src/
 	$(BLACK) tests/
 
-#Lint using pylint
+#Lint using ruff
 lint: format
-	$(PYLINT) src/
+	$(RUFF) src/
 
 #Perform unit tests under tests/ directory
 test: lint
