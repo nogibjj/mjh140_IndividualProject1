@@ -1,7 +1,7 @@
-# Descriptive Statistics with Pandas and Matplotlib   [![GitHub Actions](https://github.com/nogibjj/mjh140---MiniProject2/workflows/CI/badge.svg)](https://github.com/nogibjj/mjh140---MiniProject2/actions)
+# Descriptive Statistics with Pandas and Matplotlib   [![Workflows_by_Job](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/workflow.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/workflow.yml)
 
 
-## Summary:
+## Summary: TESTING
 
 This project uses the Pandas package for generating descriptive statistics on the Iris Species dataset. Matplotlib and Seaborn packages were used to create a boxplot visualization of Sepal Length by Species. A Jupyter Notebook is included in this repository to walk through the functions used to generate the descriptive statistics and visualzation. For more info on the Iris Species dataset, visit the following link:
 
