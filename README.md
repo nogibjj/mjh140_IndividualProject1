@@ -1,11 +1,11 @@
-# Descriptive Statistics with Pandas and Matplotlib   
-[![Install](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/install.yml)   [![Format](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml)   [![Linting](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/lint.yml)
+# Descriptive Statistics with Pandas and Seaborn   
+[![Install](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/install.yml)   [![Format](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml)   [![Linting](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/lint.yml)   [![Unit Tests](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/unitTests.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/unitTests.yml)
 
 
 
-## Summary: TESTING
+## Summary:
 
-This project uses the Pandas package for generating descriptive statistics on the Iris Species dataset. Matplotlib and Seaborn packages were used to create a boxplot visualization of Sepal Length by Species. A Jupyter Notebook is included in this repository to walk through the functions used to generate the descriptive statistics and visualzation. For more info on the Iris Species dataset, visit the following link:
+This project uses the Pandas package for generating descriptive statistics on the Iris Species dataset. The Seaborn package was used to create a boxplot visualization of Sepal Length broken down by Species. A Jupyter Notebook is included in this repository to walk through the functions used to generate the descriptive statistics and visualzation. For more info on the Iris Species dataset, visit the following link:
 
 https://www.kaggle.com/datasets/uciml/iris?resource=download
 
@@ -18,18 +18,26 @@ https://www.kaggle.com/datasets/uciml/iris?resource=download
 ├── data
 │   └── iris_data.csv
 ├── .github/workflows
-│   └── actions.yml
+│   ├── format.yml
+│   ├── install.yml
+│   ├── lint.yml
+│   └── unitTests.yml
 ├── .gitignore
 ├── Makefile
-├── PetalLength_by_Species.png
+├── plots
+│   ├── .test_cases_plot.png
+│   └── SepalLengthbySpecies_boxplot.png
 ├── README.md
 ├── requirements.txt
 ├── src
 │   ├── __init__.py
-│   └── descriptive_statistic
+│   ├── lib.py
+│   ├── script.py
+│   └── statistics_notebook.ipynb
 └── tests
     ├── __init__.py
-    └── test_descriptivestats.py
+    ├── test_lib.py
+    └── test_script.py
 
 ```
 
