@@ -37,12 +37,12 @@ jobs:
           source venv/bin/activate
           make format
         working-directory: ${{ github.workspace }}
-  pylint:
+  lint:
     runs-on: ubuntu-latest
     needs: create-venv
     steps:
       - uses: actions/checkout@v3
-      - name: Pylint
+      - name: Ruff
         run: |
           python3 -m venv venv
           source venv/bin/activate
