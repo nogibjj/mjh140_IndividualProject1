@@ -1,6 +1,5 @@
 # Descriptive Statistics with Pandas and Matplotlib   
-
-[![Format](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml)
+[![Install](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/install.yml)  [![Format](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/format.yml)
 
 
 
