@@ -2,7 +2,7 @@
 
 import os
 import seaborn as sns
-import src.lib as lib
+from src import lib
 
 def save_plot(file_name, plot):
     '''Saves plot to /plots directory'''
