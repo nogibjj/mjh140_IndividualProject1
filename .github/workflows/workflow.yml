@@ -10,8 +10,8 @@ jobs:
   venv:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Venv Activation
-        uses: actions/checkout@v3
         run: |
           make venv
       - name: Set up Python 3.8
