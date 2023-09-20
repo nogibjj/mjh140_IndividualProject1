@@ -1,3 +1,5 @@
+'''Shared functions for Individual Project 1'''
+
 import os
 import pandas as pd
 import seaborn as sns
@@ -37,7 +39,7 @@ def visualize_iris(iris_df):
     if not isinstance(iris_df, pd.DataFrame):
         raise TypeError("Data must be in pandas dataframe form")
 
-    g = sns.catplot(
+    fig = sns.catplot(
         x="Species", 
         y="SepalLengthCm", 
         data=iris_df,
@@ -46,10 +48,10 @@ def visualize_iris(iris_df):
         aspect=1.3
     )
     
-    g.set(
+    fig.set(
         title="Boxplot of Sepal Length by Species", 
         xlabel="Species", 
         ylabel = "Sepal Length (Cm)"
     )
     
-    return g
+    return fig
