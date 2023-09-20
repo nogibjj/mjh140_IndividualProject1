@@ -1,5 +1,5 @@
 #Variables:
-VENV := venv
+VENV := myenv
 PYTHON := $(VENV)/bin/python3
 PIP := $(VENV)/bin/pip
 BLACK := $(VENV)/bin/black

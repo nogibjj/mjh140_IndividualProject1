@@ -7,19 +7,24 @@ on:
   workflow_dispatch:
 
 jobs:
-  venv:
+  create-venv:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Venv Activation
+      - name: Create and Cache Virtual Environment
+        uses: actions/cache@v2
+        with:
+          path: myenv
+          key: venv-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          restore-keys: venv-${{ runner.os }}-
+
+      - name: Create Virtual Environment
         run: |
           make venv
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.8
+          source myenv/bin/activate
+          make install
   install:
     runs-on: ubuntu-latest
+    needs: create-venv
     steps:
       - uses: actions/checkout@v3
       - name: Install Dependencies
@@ -27,6 +32,7 @@ jobs:
           make install
   format:
     runs-on: ubuntu-latest
+    needs: create-venv
     steps:
       - uses: actions/checkout@v3
       - name: Format
@@ -34,6 +40,7 @@ jobs:
           make format
   pylint:
     runs-on: ubuntu-latest
+    needs: create-venv
     steps:
       - uses: actions/checkout@v3
       - name: Pylint
@@ -41,6 +48,7 @@ jobs:
           make pylint
   unitTests:
     runs-on: ubuntu-latest
+    needs: create-venv
     steps:
       - uses: actions/checkout@v3
       - name: Unit Tests
