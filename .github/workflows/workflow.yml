@@ -45,7 +45,7 @@ jobs:
         run: |
           python3 -m venv venv
           source venv/bin/activate
-          make pylint
+          make lint
         working-directory: ${{ github.workspace }}
   unitTests:
     runs-on: ubuntu-latest
