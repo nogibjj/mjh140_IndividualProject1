@@ -1,9 +1,9 @@
 name: Workflows_by_Job
 on:
   push:
-    branches: [ main ]
+    branches: [ pseudo-branch ]
   pull_request:
-    branches: [ main ]
+    branches: [ pseudo-branch ]
   workflow_dispatch:
 
 jobs:
