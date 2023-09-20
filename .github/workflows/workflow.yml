@@ -10,9 +10,8 @@ jobs:
   venv:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
       - name: Venv Activation
+        uses: actions/checkout@v3
         run: |
           make venv
       - name: Set up Python 3.8
@@ -22,24 +21,28 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Install Dependencies
         run: |
           make install
   format:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Format
         run: |
           make format
   pylint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Pylint
         run: |
           make pylint
   unitTests:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Unit Tests
         run: |
           make test
