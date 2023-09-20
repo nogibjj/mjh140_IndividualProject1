@@ -1,4 +1,6 @@
-# Descriptive Statistics with Pandas and Matplotlib   [![GitHub Actions](https://github.com/nogibjj/mjh140---MiniProject2/workflows/CI/badge.svg)](https://github.com/nogibjj/mjh140---MiniProject2/actions)
+# Descriptive Statistics with Pandas and Matplotlib   
+[![GitHub Actions](https://github.com/nogibjj/mjh140---MiniProject2/workflows/CI/badge.svg)](https://github.com/nogibjj/mjh140---MiniProject2/actions)
+![Install](https://img.shields.io/github/workflow/status/nogibjj/mjh140_IndividualProject1/Install?label=Install)
 
 
 ## Summary:
