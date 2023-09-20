@@ -1,4 +1,4 @@
-# Descriptive Statistics with Pandas and Matplotlib   [![GitHub Actions](https://github.com/nogibjj/mjh140---MiniProject2/workflows/CI/badge.svg)](https://github.com/nogibjj/mjh140---MiniProject2/actions)
+# Descriptive Statistics with Pandas and Matplotlib   [![Workflows_by_Job](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/workflow.yml/badge.svg)](https://github.com/nogibjj/mjh140_IndividualProject1/actions/workflows/workflow.yml)
 
 
 ## Summary: TESTING
