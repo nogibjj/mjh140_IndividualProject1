@@ -34,6 +34,9 @@ def describe_iris(iris_df):
 def visualize_iris(iris_df):
     '''Visualize sepal length distribution for each species.'''
 
+    if not isinstance(iris_df, pd.DataFrame):
+        raise TypeError("Data must be in pandas dataframe form")
+
     g = sns.catplot(
         x="Species", 
         y="SepalLengthCm", 
@@ -52,6 +55,14 @@ def visualize_iris(iris_df):
     return g
 
 def save_plot(file_name, plot):
+
+    if (file_name[-3:] != "png") | (file_name[-3:] != "jpg"):
+        file_name += ".png"
+
+    if not isinstance(plot, sns.FacetGrid):
+        raise TypeError("Plot must be in Seaborn FacetGrid form")
+
+    print(type(plot))
     plot.savefig(
         "plots/" + f"{file_name}"
     )
