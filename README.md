@@ -3,7 +3,7 @@
 
 ## Summary:
 
-This project introduces the Pandas package for generating descriptive statistics on the Iris Species dataset. Matplotlib and Seaborn packages were used to create a boxplot visualization of Sepal Length by Species. For more info on the Iris Species dataset, visit the following link:
+This project uses the Pandas package for generating descriptive statistics on the Iris Species dataset. Matplotlib and Seaborn packages were used to create a boxplot visualization of Sepal Length by Species. A Jupyter Notebook is included in this repository to walk through the functions used to generate the descriptive statistics and visualzation. For more info on the Iris Species dataset, visit the following link:
 
 https://www.kaggle.com/datasets/uciml/iris?resource=download
 
