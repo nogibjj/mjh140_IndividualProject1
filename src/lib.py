@@ -53,16 +53,3 @@ def visualize_iris(iris_df):
     )
     
     return g
-
-def save_plot(file_name, plot):
-
-    if (file_name[-3:] != "png") | (file_name[-3:] != "jpg"):
-        file_name += ".png"
-
-    if not isinstance(plot, sns.FacetGrid):
-        raise TypeError("Plot must be in Seaborn FacetGrid form")
-
-    print(type(plot))
-    plot.savefig(
-        "plots/" + f"{file_name}"
-    )
