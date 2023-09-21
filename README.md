@@ -9,6 +9,10 @@ This project uses the Pandas package for generating descriptive statistics on th
 
 https://www.kaggle.com/datasets/uciml/iris?resource=download
 
+For a summary video of this project visit the link below:
+
+[IDS-706 Individual Project 1 Summary Video](https://youtu.be/qplDJLdsPUg)
+
 ## Structure
 
 ```text
